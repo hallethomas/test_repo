@@ -11,7 +11,7 @@ mod1 <- stan_glm(Y~W, data=nsw)
 sims <- as.matrix(mod1)
 print(mod1)
 
-#' Same as just calculating the mean difference between gorups
+#' Same as just calculating the mean difference between groups
 #' (except with this small sample the default priors in stan_glm make
 #' a little bit of difference)
 mean(Y[W==1]) - mean(Y[W==0])
